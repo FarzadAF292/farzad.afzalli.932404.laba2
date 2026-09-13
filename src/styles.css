@@ -47,6 +47,15 @@ header h2 {
   color: var(--accent-color);
 }
 
+/* Navigation link states */
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: #fff3e8;
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
@@ -88,6 +97,13 @@ label {
   margin-bottom: 5px;
 }
 
+/* Form field focus state */
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--primary-color);
+  border-radius: 4px;
+}
+
 input,
 textarea {
   width: 100%;
@@ -106,6 +122,42 @@ button {
   color: var(--accent-color);
   border: none;
   cursor: pointer;
+}
+
+/* Variant 16: animated gradient button */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  color: var(--accent-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #f97316, #fb923c, #f97316);
+
+  background-size: 200% 100%;
+  background-position: left center;
+  transition:
+    background-position 0.4s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Gradient moves on hover */
+button:hover {
+  background-position: right center;
+}
+
+/* White outline and shadow on focus */
+button:focus {
+  outline: 3px solid var(--accent-color);
+  box-shadow: 0 0 0 4px var(--primary-color);
+}
+
+/* Smaller gradient shift on active */
+button:active {
+  background-position: center;
+  transform: scale(0.98);
 }
 
 footer {

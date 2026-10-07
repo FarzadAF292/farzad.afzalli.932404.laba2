@@ -116,15 +116,6 @@ textarea {
   min-height: 120px;
 }
 
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: var(--accent-color);
-  border: none;
-  cursor: pointer;
-}
-
 /* Variant 16: animated gradient button */
 button {
   margin-top: 15px;
@@ -133,6 +124,7 @@ button {
   border: none;
   border-radius: 8px;
   font-weight: bold;
+  cursor: pointer;
 
   background: linear-gradient(90deg, #c2410c, #9a3412, #c2410c);
 
@@ -166,4 +158,10 @@ footer {
   color: var(--accent-color);
   text-align: center;
   padding: 15px;
+}
+
+a,
+button,
+input[type="submit"] {
+  cursor: pointer;
 }

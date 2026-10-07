@@ -1,6 +1,6 @@
 /* Variables for colors */
 :root {
-  --primary-color: #f97316;
+  --primary-color: #c2410c;
   --accent-color: #ffffff;
   --text-color: #222222;
   --light-bg: #fff7ed;
@@ -54,7 +54,7 @@ nav a:hover {
 }
 
 nav a:visited {
-  color: #fff3e8;
+  color: var(--accent-color);
 }
 
 main {
@@ -134,7 +134,7 @@ button {
   border-radius: 8px;
   font-weight: bold;
 
-  background: linear-gradient(90deg, #f97316, #fb923c, #f97316);
+  background: linear-gradient(90deg, #c2410c, #9a3412, #c2410c);
 
   background-size: 200% 100%;
   background-position: left center;
